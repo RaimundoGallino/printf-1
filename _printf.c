@@ -1,9 +1,10 @@
 #include "holberton.h"
 /**
- *  - print the numbers given
+ * _printf - Entry Point
+ * @format: String cointains the formato to the output
  *
- * @format:
- *
+ * Description: Prints to stdout using the given format and arguments
+ * Return: Count the chars printed
  */
 int _printf(const char *format, ...)
 {
@@ -21,11 +22,11 @@ int _printf(const char *format, ...)
 		{"R", print_rot},
 		{NULL, NULL}
 	};
-	va_start (ap, format);
+	va_start(ap, format);
 	while (format != NULL && format[i] != '\0')
 	{
 		j = 0;
-		if (format[i] =='%')
+		if (format[i] == '%')
 		{
 			i += 1;
 			while (arr[j].op != NULL)
@@ -44,6 +45,6 @@ int _printf(const char *format, ...)
 		}
 		i++;
 	}
-	va_end (ap);
+	va_end(ap);
 	return (length);
 }
