@@ -38,6 +38,11 @@ int _printf(const char *format, ...)
 				}
 				j++;
 			}
+			if (arr[j].op == NULL)
+			{
+				length += print_normal(format[i - 1]);
+				length += print_normal(format[i]);
+			}
 		}
 		else
 		{
