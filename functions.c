@@ -52,6 +52,7 @@ int print_mod(va_list list)
 int print_d(va_list list)
 {
 	int in = va_arg(list, int);
+	unsigned int val;
 	int cont_nums = 0;
 
 	printf("%i\n", in);
@@ -61,9 +62,13 @@ int print_d(va_list list)
 		if (in < 0)
 		{
 			print_normal('-');
-			in = in * -1;
+			cont_nums++;
+			val = in;
+			val = -val;
 		}
-		rec_pd(in, &cont_nums);
+		else
+			val = in;
+		rec_pd(val, &cont_nums);
 	}
 	else
 	{
