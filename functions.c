@@ -54,7 +54,14 @@ int print_d(va_list list)
 	int cont_nums = 0;
 
 	if(in != 0)
+	{
+		if (in < 0)
+		{
+			print_normal('-');
+			in = in * -1;
+		}
 		rec_pd(in, &cont_nums);
+	}
 	else
 	{
 		print_normal('0');
