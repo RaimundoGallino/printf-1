@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include "Aux_Functions/aux_fun.h"
 
 /**
  * print_c - function called by _printf to print characters
