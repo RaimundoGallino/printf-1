@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 
 /**
  * print_c - function called by _printf to print characters
@@ -22,7 +23,7 @@ int print_c(va_list list)
 int print_s(va_list list)
 {
 	char *str = va_arg(list, char *);
-	int len = strlen(str);
+	int len = _strlen(str);
 
 	write(1, str, len);
 	va_end(list);
@@ -53,7 +54,9 @@ int print_d(va_list list)
 	int in = va_arg(list, int);
 	int cont_nums = 0;
 
-	if(in != 0)
+	printf("%i\n", in);
+
+	if (in != 0)
 	{
 		if (in < 0)
 		{

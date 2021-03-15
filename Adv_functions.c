@@ -10,7 +10,7 @@
 int print_rev(va_list list)
 {
 	char *str = va_arg(list, char*);
-	int i = 0, len = strlen(str);
+	int i = 0, len = _strlen(str);
 
 	for (i = len - 1 ; i >= 0 ; i--)
 		write(1, &str[i], 1);
@@ -27,8 +27,8 @@ int print_rev(va_list list)
 int print_rot(va_list list)
 {
 	char *str = va_arg(list, char*);
-	int len = strlen(str);
-	char *rot1 = strdup(str);
+	int len = _strlen(str);
+	char *rot1 = _strdup(str);
 	char *rot2 = rot13(rot1);
 
 	write(1, rot2, len);
