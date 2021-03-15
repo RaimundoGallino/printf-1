@@ -8,6 +8,13 @@
 #include <unistd.h>
 #include <stdint.h>
 
+/**
+ * struct pr - struct that contains the format specifier and the corresponding
+ * function to be called
+ * @op: format specifier
+ * @f: coresponding function
+ * Return: void
+ */
 typedef struct pr
 {
 	char *op;
