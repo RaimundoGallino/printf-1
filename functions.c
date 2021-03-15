@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include "Aux_Functions/aux_fun.h"
 
 /**
  * print_c - function called by _printf to print characters
@@ -54,7 +53,13 @@ int print_d(va_list list)
 	int in = va_arg(list, int);
 	int cont_nums = 0;
 
-	rec_pd(in, &cont_nums);
+	if(in != 0)
+		rec_pd(in, &cont_nums);
+	else
+	{
+		print_normal('0');
+		cont_nums++;
+	}
 	va_end(list);
 	return (cont_nums);
 }
