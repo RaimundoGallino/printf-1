@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
+#include <limits.h>
 
 /**
  * print_c - function called by _printf to print characters
@@ -61,9 +62,14 @@ int print_d(va_list list)
 		if (in < 0)
 		{
 			print_normal('-');
+			val = -in;
+			if (in == INT_MIN)
+			{
+				print_normal('2');
+				val = val % 2000000000;
+				cont_nums++;
+			}
 			cont_nums++;
-			val = in;
-			val = -val;
 		}
 		else
 			val = in;
