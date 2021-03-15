@@ -55,7 +55,6 @@ int print_d(va_list list)
 	unsigned int val;
 	int cont_nums = 0;
 
-	printf("%i\n", in);
 
 	if (in != 0)
 	{

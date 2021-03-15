@@ -9,7 +9,6 @@ void rec_pd(int num, int *cont)
 {
 	if (num)
 	{
-		printf("ENTRO: %i", num);
 		rec_pd(num / 10, cont);
 		print_normal(num % 10 + '0');
 		*cont += 1;
