@@ -1,0 +1,35 @@
+.TH "" "Linux Programmer's Manual" Manual _printf
+.SH
+NAME
+_printf \- print format
+
+.SH
+SYNOPSIS
+.B printf FORMAT [\fB\ ARGUMENT\fR]
+
+.SH
+DESCRIPTION
+printf print ARGUMENT to standrard output acording to FORMAT established previously or execute acroding to the options. If we want to specify a format to print our argument we must introduce the "%" specifier
+
+.SH
+FORMAT SPECIFIERS
+.TP
+.B %c
+print the argument as a single character
+.TP
+.B %s
+print the argument as a string. A sigle character will be considered as a string
+.TP
+.BR %i ", " %d
+%d specifies the type of variable as decimal and %i specifies the type as integer. In usage terms, there is no difference in printf() function output while printing a number using %d or %i
+
+.SH
+OPTIONS
+.TP
+.B \\\n new line
+.TP
+.B \\%% prints a sigle %
+
+.SH
+AUTHORS
+Diego Varela, Raimundo Gallino
