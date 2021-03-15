@@ -13,14 +13,8 @@ int _printf(const char *format, ...)
 	int i = 0, j;
 
 	pr_f arr[] = {
-		{"c", print_c},
-		{"s", print_s},
-		{"%", print_mod},
-		{"d", print_d},
-		{"i", print_d},
-		{"r", print_rev},
-		{"R", print_rot},
-		{NULL, NULL}
+		{"c", print_c}, {"s", print_s}, {"%", print_mod}, {"d", print_d},
+		{"i", print_d}, {"r", print_rev}, {"R", print_rot}, {NULL, NULL}
 	};
 	va_start(ap, format);
 	while (format != NULL && format[i] != '\0')
