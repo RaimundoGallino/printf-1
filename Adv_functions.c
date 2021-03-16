@@ -36,3 +36,20 @@ int print_rot(va_list list)
 	va_end(list);
 	return (len);
 }
+
+/**
+ * print_bin - Entry point
+ * @num: List of arguments
+ *
+ * Description: Print the unsigned ints in binary from a va_list
+ * Return: Count of chars printed
+ */
+int print_bin(va_list num)
+{
+        int in = va_arg(num, unsigned int);
+        int cont_nums = 0;
+
+        rec_bin(in, &cont_nums);
+        va_end(num);
+        return (cont_nums);
+}
