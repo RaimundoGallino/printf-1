@@ -62,9 +62,9 @@ int _printf(const char *format, ...)
 		{"R", print_rot}, {"b", print_bin}, {"x", print_hex},
 		{"X", print_heX}, {NULL, NULL}
 	};
-	if (!format || (format[0] == '%' && format[1] == '\0'))
+	if (!format || (format[0] == '%' && !format[1]))
 		return (-1);
-	if (format[0] == '%' && format[1] == ' ' && format[2] == '\0')
+	if (format[0] == '%' && format[1] == ' ' && !format[2])
 		return (-1);
 
 	va_start(ap, format);
