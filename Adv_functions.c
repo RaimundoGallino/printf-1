@@ -51,12 +51,12 @@ int print_rot(va_list list)
  */
 int print_bin(va_list num)
 {
-        int in = va_arg(num, unsigned int);
-        int cont_nums = 0;
+	int in = va_arg(num, unsigned int);
+	int cont_nums = 0;
 
-        rec_bin(in, &cont_nums);
-        va_end(num);
-        return (cont_nums);
+	rec_bin(in, &cont_nums);
+	va_end(num);
+	return (cont_nums);
 }
 
 /**
@@ -69,13 +69,13 @@ int print_bin(va_list num)
  */
 int print_hex(va_list num)
 {
-        int flag = 0;
-        int in = va_arg(num, unsigned int);
-        int cont_nums = 0;
+	int flag = 0;
+	int in = va_arg(num, unsigned int);
+	int cont_nums = 0;
 
-        rec_hex(in, &cont_nums, flag);
-        va_end(num);
-        return (cont_nums);
+	rec_hex(in, &cont_nums, flag);
+	va_end(num);
+	return (cont_nums);
 }
 
 /**
@@ -89,11 +89,11 @@ int print_hex(va_list num)
 
 int print_heX(va_list num)
 {
-        int flag = 1;
-        int in = va_arg(num, unsigned int);
-        int cont_nums = 0;
+	int flag = 1;
+	int in = va_arg(num, unsigned int);
+	int cont_nums = 0;
 
-        rec_hex(in, &cont_nums, flag);
-        va_end(num);
-        return (cont_nums);
+	rec_hex(in, &cont_nums, flag);
+	va_end(num);
+	return (cont_nums);
 }
