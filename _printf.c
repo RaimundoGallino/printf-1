@@ -15,7 +15,8 @@ int _printf(const char *format, ...)
 	pr_f arr[] = {
 		{"c", print_c}, {"s", print_s}, {"%", print_mod},
 		{"d", print_d}, {"i", print_d}, {"r", print_rev},
-		{"R", print_rot}, {"b", print_bin}, {NULL, NULL}
+		{"R", print_rot}, {"b", print_bin},{"x", print_hex},
+		{"X", print_heX}, {NULL, NULL}
 	};
 	if (!format)
 		return (-1);

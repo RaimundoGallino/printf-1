@@ -40,6 +40,10 @@ int print_normal(char ch);
 
 int print_bin(va_list num);
 
+int print_hex(va_list num);
+
+int print_heX(va_list num);
+
 void rec_pd(unsigned int num, int *cont);
 
 int _strlen(char *str);
