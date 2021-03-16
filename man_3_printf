@@ -15,20 +15,32 @@ printf print ARGUMENT to standrard output acording to FORMAT established previou
 FORMAT SPECIFIERS
 .TP
 .B %c
+.IP
 print the argument as a single character
 .TP
 .B %s
+.IP
 print the argument as a string. A sigle character will be considered as a string
 .TP
 .BR %i ", " %d
+.IP
 %d specifies the type of variable as decimal and %i specifies the type as integer. In usage terms, there is no difference in printf() function output while printing a number using %d or %i
-
-.SH
-OPTIONS
 .TP
-.B \\\n new line
+.B %b
+.IP
+print the given unsigned integer in binary
 .TP
-.B \\%% prints a sigle %
+.B %R
+.IP
+prints the argument as a string in ROT13
+.TP
+.B %r
+.IP
+prints the argument as a string in reverse
+.TP
+.BR %x ", " %X
+.IP
+%x Print the unsigned ints in hexadecimal in lowecase from the argument, %X Print the unsigned ints in hexadecimal in uppercase from the argument
 
 .SH
 AUTHORS
