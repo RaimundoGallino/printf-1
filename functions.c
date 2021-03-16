@@ -63,12 +63,6 @@ int print_d(va_list list)
 		{
 			print_normal('-');
 			val = -in;
-			if (in == INT_MIN)
-			{
-				print_normal('2');
-				val = val % 2000000000;
-				cont_nums++;
-			}
 			cont_nums++;
 		}
 		else

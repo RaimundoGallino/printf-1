@@ -5,7 +5,7 @@
  * @cont: counter
  * Return: void
  */
-void rec_pd(int num, int *cont)
+void rec_pd(unsigned int num, int *cont)
 {
 	if (num)
 	{

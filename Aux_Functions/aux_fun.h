@@ -4,6 +4,6 @@
 #include "rec_pd.c"
 #include "_strlen.c"
 #include "_strdup.c"
-void rec_pd(int num, int *cont);
+void rec_pd(unsigned int num, int *cont);
 char *rot13(char *);
 #endif

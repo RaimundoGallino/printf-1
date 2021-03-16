@@ -38,7 +38,7 @@ int print_rot(va_list list);
 
 int print_normal(char ch);
 
-void rec_pd(int num, int *cont);
+void rec_pd(unsigned int num, int *cont);
 
 int _strlen(char *str);
 
