@@ -32,7 +32,7 @@ int print_rot(va_list list)
 	char *rot2;
 	
 	if (!str)
-		return (-1);
+		return (0);
 	len = _strlen(str);
 	rot1 = _strdup(str);
 	rot2 = rot13(rot1);	
