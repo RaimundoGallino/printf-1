@@ -30,7 +30,7 @@ void func(va_list ap, int *length, const char *format, pr_f arr[])
 			}
 			if (arr[j].op == NULL && format[i + 1] != ' ')
 			{
-				if (format [i + 1] != '\0')
+				if (format[i + 1] != '\0')
 				{
 					print_normal(format[i]);
 					print_normal(format[i + 1]);

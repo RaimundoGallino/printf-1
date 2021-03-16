@@ -25,11 +25,11 @@ int print_s(va_list list)
 {
 	char *str = va_arg(list, char *);
 	int len = _strlen(str);
-	if (str == '\0')
+	if(str == '\0')
 	{
 		write(1, "(null)", 6);
 		va_end(list);
-		return(6);
+		return (6);
 	}
 
 	write(1, str, len);
