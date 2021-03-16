@@ -27,10 +27,15 @@ int print_rev(va_list list)
 int print_rot(va_list list)
 {
 	char *str = va_arg(list, char*);
-	int len = _strlen(str);
-	char *rot1 = _strdup(str);
-	char *rot2 = rot13(rot1);
-
+	int len;
+	char *rot1;
+	char *rot2;
+	
+	if (!str)
+		return (-1);
+	len = _strlen(str);
+	rot1 = _strdup(str);
+	rot2 = rot13(rot1);	
 	write(1, rot2, len);
 	free(rot1);
 	va_end(list);
