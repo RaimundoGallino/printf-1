@@ -19,21 +19,30 @@ void func(va_list ap, int *length, const char *format, pr_f arr[])
 		j = 0;
 		if (format[i] == '%')
 		{
-			i += 1;
 			while (arr[j].op != NULL)
 			{
-				if (format[i] == arr[j].op[0])
+				if (format[i + 1] == arr[j].op[0])
 				{
 					*length += arr[j].f(ap);
 					break;
 				}
 				j++;
 			}
-			if (arr[j].op == NULL)
+			if (arr[j].op == NULL && format[i + 1] != ' ')
 			{
-				*length += print_normal(format[i - 1]);
-				*length += print_normal(format[i]);
+				if (format [i + 1] != '\0')
+				{
+					print_normal(format[i]);
+					print_normal(format[i + 1]);
+					*length = *length + 2;
+				}
+				else
+				{
+					*length = -1;
+					return;
+				}
 			}
+			i += 1;
 		}
 		else
 		{
