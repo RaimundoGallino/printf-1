@@ -10,18 +10,18 @@ This Repository contains all the functions needed to make **_printf()** work.  T
 **_printf.c**  - contains the _printf() function and the code structure.
 
 **functions.c** - contains the basic functions called by the printf
->print_normal - print the input character by character
->print_c - prints the character given ,  as an ASCII value (char)
->print_s - print the input specified as a string (char*)
->print_d - print the input as an integer
->print_mod - prints a % character
+>print_normal - print the input character by character<br>
+>print_c - prints the character given ,  as an ASCII value (char)<br>
+>print_s - print the input specified as a string (char*)<br>
+>print_d - print the input as an integer<br>
+>print_mod - prints a % character<br>
 
 **Adv_functions.c** - contains specific functions for advanced  format specifiers
->print_rev - prints the string given in reverse
->print_rot - print the string given in ROT13
->print_bin - prints the integer in binary
->prints_hex - prints the integer given in hexadecimal lowercase
->prints_heX - prints the integer given in hexadecimal in UPPERCASE
+>print_rev - prints the string given in reverse<br>
+>print_rot - print the string given in ROT13<br>
+>print_bin - prints the integer in binary<br>
+>prints_hex - prints the integer given in hexadecimal lowercase<br>
+>prints_heX - prints the integer given in hexadecimal in UPPERCASE<br>
 
 **Aux_functions/** - contains auxiliary functions that are called in the previous described functions 
 - **8-rot13.c** - Encode the string into rot 13
