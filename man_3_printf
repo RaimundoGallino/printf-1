@@ -5,11 +5,22 @@ _printf \- print format
 
 .SH
 SYNOPSIS
-.B printf FORMAT [\fB\ ARGUMENT\fR]
+.TP
+.B #include "holberton.h"
+.TP
+.B int _printf(const char *format, ...);
+.TP
+.B _printf FORMAT [\fB\ ARGUMENT \fB\]
 
 .SH
 DESCRIPTION
-printf print ARGUMENT to standrard output acording to FORMAT established previously or execute acroding to the options. If we want to specify a format to print our argument we must introduce the "%" specifier
+_printf print ARGUMENT to standrard output acording to FORMAT established previously or execute acroding to the options. If we want to specify a format to print our argument we must introduce the "%" specifier
+.TP
+.B Return Value
+.IP
+If _printf successfuly ends, the fuction returns the number of characters printed (excluding the string  ending null character)
+
+If _printf has an error in the operation, the function retunrs a negative value
 
 .SH
 FORMAT SPECIFIERS
@@ -41,6 +52,27 @@ prints the argument as a string in reverse
 .BR %x ", " %X
 .IP
 %x Print the unsigned ints in hexadecimal in lowecase from the argument, %X Print the unsigned ints in hexadecimal in uppercase from the argument
+
+.SH
+EXAMPLES
+
+To print a string "Hello Holberton":
+
+.SAMPLE
+ #include "holberton.h"
+ /**
+ * main - main function of program
+ * Return: always 0
+ */
+ int main(void)
+ {
+ 	_printf("Hello Holberton");
+ 	return (0);
+ }
+
+Output: Hello Holberton
+.ESAMPLE
+
 
 .SH
 AUTHORS
