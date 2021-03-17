@@ -39,7 +39,7 @@ This Repository contains all the functions needed to make **_printf()** work.  T
 <h1 align="center"> Parameters</h1> 
 
 ```` c
-int _printf ( const char * format, ... );
+int _printf( const char * format, ... );
 ````
 
 The **Format** specifier "%"  should be added before the character parameters the argument passed to the function.
