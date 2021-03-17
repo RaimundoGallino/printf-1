@@ -64,14 +64,14 @@ If an error occurs, a negative number is returned.
 <h2> How to use </h2>
 
 **Compilation**
-All the *.c files need to be compiled along with the main.c you are using. The compiler used to compile and check all the files was `gcc 4.8.4`  on Ubuntu 14.04 LTS with the flags  `-Wall Werror`  `-Westra`  and  `-pedantic.`
+All the *.c files need to be compiled along with the main.c you are using. The compiler used to compile and check all the files was `gcc 4.8.4`  on Ubuntu 14.04 LTS with the flags  `-Wall Werror`  `-Wextra`  and  `-pedantic.`
 
 Run this command on your terminal to compile the files
 
    `gcc -Wall -Werror -Wextra -pedantic *.c`
 
 <h3> Example </h3> 
-In function ``main.c`` testing the use of ``_printf()`` function <br>
+In function **main.c** testing the use of  **_printf()**  function <br>
 
 	#include "holberton.h" 
 	/** 
@@ -82,7 +82,7 @@ In function ``main.c`` testing the use of ``_printf()`` function <br>
 	{ 
 		char *str;
 		  
-		str = "Holberton" 
+		str = "Holberton"; 
 		_printf("%s\n", str);
 		return (0);
 	}
