@@ -71,7 +71,7 @@ Run this command on your terminal to compile the files
    `gcc -Wall -Werror -Wextra -pedantic *.c`
 
 <h3> Example </h3> 
-In function `main.c` testing the use of _printf() function
+In function ``main.c`` testing the use of ``_printf()`` function <br>
 
 	#include "holberton.h" 
 	/** 
