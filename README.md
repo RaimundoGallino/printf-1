@@ -86,6 +86,14 @@ In function ``main.c`` testing the use of ``_printf()`` function <br>
 		_printf("%s\n", str);
 		return (0);
 	}
+<h4> ---!> Output </h4>
+
+```{bash}
+linux>$  gcc -Wall -Werror -Wextra -pedantic *.c
+linux>$  ./a.out
+Holberton
+linux>$
+```
 
 ## Contributors
 
